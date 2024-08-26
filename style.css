@@ -108,7 +108,7 @@ body {
   p,
   ul {
     color: #666;
-    text-align: justify;
+    text-align: left;
     font-family: "Inter", sans-serif;
     font-size: 1.375rem;
     font-style: normal;

@@ -1,0 +1,394 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+}
+
+.componentes-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.algetec-header-title {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(132deg, #1e79d3 8.61%, #4da6ff 95.09%), #4da6ff;
+
+  color: #faf9f6;
+  text-align: center;
+
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.algetec-component-1 {
+  display: flex;
+  padding: 26px 18px 35px 18px;
+  margin: 10px 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+
+  border-radius: 14px;
+  background: rgba(17, 193, 108, 0.2);
+}
+
+.algetec-component-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.25rem;
+  align-self: stretch;
+}
+
+.algetec-component-title {
+  display: flex;
+  padding-bottom: 3px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+
+  flex-direction: column;
+  flex: 1 0 0;
+
+  border-bottom: 2px solid #0779e4;
+
+  span {
+    color: #004784;
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.algetec-component-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+
+  span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 0 0;
+
+    color: #004784;
+    text-align: right;
+    font-family: "Asap Condensed", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+}
+
+.algetec-component-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p,
+  ul {
+    color: #666;
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+  }
+}
+
+.algetec-component-2 {
+  display: flex;
+  padding: 10px 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.algetec-component-2-body {
+  display: flex;
+  padding: 0px 26px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  align-self: stretch;
+}
+
+.algetec-component-2-figure {
+  display: flex;
+  padding: 22px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+
+  img {
+    border-radius: 50%;
+    width: 296px;
+    height: 296px;
+    object-fit: cover;
+  }
+
+  figcaption {
+    color: #666;
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.algetec-component-3-alert {
+  border: 2px solid #6c3b01;
+  background: linear-gradient(
+      0deg,
+      rgba(250, 211, 128, 0.86) 0%,
+      rgba(250, 211, 128, 0.86) 100%
+    ),
+    #fff;
+  box-shadow: 0px 9px 8px 0px rgba(108, 59, 1, 0.22);
+  color: #6c3b01;
+}
+
+.algetec-component-3-success {
+  border: 2px solid #004641;
+  background: rgba(128, 208, 194, 0.5);
+
+  box-shadow: 0px 9px 8px 0px rgba(108, 59, 1, 0.22);
+  color: #004641;
+}
+
+.algetec-component-3-info {
+  border: 2px solid #0062b5;
+  background: #e9f6ff;
+
+  box-shadow: 0px 9px 8px 0px rgba(108, 59, 1, 0.22);
+  color: #0062b5;
+}
+
+.algetec-component-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.algetec-component-3-wrapper {
+  display: flex;
+  max-width: 400px;
+  padding: 8px 12px;
+  margin: 10px 18px;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 6px;
+}
+
+.algetec-component-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.algetec-component-3-body {
+  display: flex;
+  padding: 13px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex: 1 0 0;
+
+  span {
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5rem;
+    letter-spacing: 0.0156rem;
+  }
+
+  p {
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: 0.0156rem;
+    margin: 0;
+  }
+}
+
+.algetec-component-4 {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+.algetec-component-4-figure {
+  display: flex;
+  padding: 16px 71px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  img {
+    border-radius: 10px;
+  }
+
+  figcaption {
+    color: #666;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+  }
+}
+
+.algetec-component-5 {
+  display: flex;
+  padding: 10px 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.algetec-component-6 {
+  display: flex;
+  padding: 22px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      max-width: calc(100vw - 5rem);
+    }
+
+    figcaption {
+      color: #666;
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 133.333% */
+      letter-spacing: 0.25px;
+    }
+  }
+}
+
+.algetec-component-7 {
+  display: flex;
+  padding: 0px 26px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.algetec-component-7-wrapper {
+  display: flex;
+  padding: 26px 13px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex: 1 0 0;
+
+  border-radius: 4px;
+  border-left: #004784;
+  background: rgba(227, 188, 82, 0.2);
+}
+
+.algetec-componente-footer {
+  display: flex;
+  padding: 10px 18px;
+  align-items: center;
+  gap: 10px;
+
+  p {
+    color: #666;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+    letter-spacing: 0.25px;
+  }
+}
+
+.algetec-max-width {
+  max-width: 50vw;
+}
+
+@media screen and (min-width: 768px) {
+  .algetec-component-1,
+  .algetec-component-2,
+  .algetec-component-3,
+  .algetec-component-4,
+  .algetec-component-5,
+  .algetec-component-6,
+  .algetec-component-7 {
+    max-width: calc(50vw - 5rem);
+    align-self: center;
+  }
+
+  .algetec-component-4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    figure {
+      padding: 0;
+    }
+  }
+
+  .algetec-component-6 {
+    figure {
+      img {
+        max-width: calc(50vw - 5rem);
+      }
+    }
+  }
+
+  .algetec-componente-footer {
+    justify-content: center;
+  }
+}

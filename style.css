@@ -86,11 +86,8 @@
   border-width: 0.125rem;
   border-style: solid;
   display: flex;
-  max-width: 25rem;
   padding: 0.5rem 0.75rem;
-  margin: 0.625rem 1.125rem;
-  align-items: center;
-  gap: 0.625rem;
+  margin: 0 auto;
   border-radius: 0.5rem;
 }
 
@@ -217,4 +214,174 @@
   .algetec-image-component img {
     max-width: calc(50dvw - 5rem);
   }
+}
+
+/* Estilos Adicionais do Creator */
+
+body {
+  counter-reset: section tacio; /* Define e reseta os dois contadores*/
+}
+
+h3.algetec_h3.reset {
+  counter-reset: section; /* Reinicia o contador a partir deste h3 */
+}
+
+h3.algetec_h3:nth-of-type(n)::before {
+  counter-increment: section; /* Incrementa o contador para cada h3 */
+  content: counter(section) ". "; /* Mostra o contador antes do texto do h3 */
+}
+h2.algetec_h2.reset {
+  counter-reset: tacio; /* Reinicia o contador a partir deste h2 */
+}
+
+h2.algetec_h2:nth-of-type(n + 3)::before {
+  /* Add any other CSS properties you want to modify */
+  counter-increment: tacio; /* Incrementa o contador para cada h2 */
+  content: counter(tacio) ". "; /* Mostra o contador antes do texto do h2 */
+}
+
+/*
+recomendado adicionar uma classe específica para que os estilos não sejam aplicados a todas as tags h3 da página
+o ideal é colocar um prefixo (ex.: .algetec__) para as classes para separar e não correr risco de conflitar com
+alguma classe do sistema
+*/
+h3.algetec_h3 {
+  margin: 16px 0px 0px;
+  /* talvez não seja necessário, o editor tem opção de justificar o texto que adiciona esse estilo inline */
+  text-align: justify;
+  break-after: avoid;
+  /* não temos essa fonte no LXP, é recomendado utilizar as fontes que o editor de oferece. Caso não seja selecionada
+  uma fonte entre as disponíveis no editor, como essa fonte não existe no sistema, o editor irá substituir pela fonte
+  padrão, Lato, e ao renderizar esse conteúdo terá uma discrepancia em relação ao que foi construído no editor */
+  font-family: Bahnschrift, sans-serif;
+  /* não seria problema utilizar uma cor fixa, porém é necessário validar como fica a apresentação no template streaming */
+  color: #bb243e;
+  line-height: 150%;
+  /* o ideal é evitar configurar tamanho de fontes em px e utilizar rem (cockpit usa o font-size base em 14px) */
+  font-size: 1em;
+  margin: 0px 0px 0px 24px;
+}
+h3.algetec_a_h3 {
+  margin: 16px 0px 0px;
+  /* talvez não seja necessário, o editor tem opção de justificar o texto que adiciona esse estilo inline */
+  text-align: justify;
+  break-after: avoid;
+  /* não temos essa fonte no LXP, é recomendado utilizar as fontes que o editor de oferece. Caso não seja selecionada
+  uma fonte entre as disponíveis no editor, como essa fonte não existe no sistema, o editor irá substituir pela fonte
+  padrão, Lato, e ao renderizar esse conteúdo terá uma discrepancia em relação ao que foi construído no editor */
+  font-family: Bahnschrift, sans-serif;
+  /* não seria problema utilizar uma cor fixa, porém é necessário validar como fica a apresentação no template streaming */
+  color: #bb243e;
+  line-height: 150%;
+  /* o ideal é evitar configurar tamanho de fontes em px e utilizar rem (cockpit usa o font-size base em 14px) */
+  font-size: 1em;
+  margin: 0px 0px 0px 24px;
+}
+
+/* colocar classe específica para evitar que as regras abaixo afetem os outros elementos da página */
+h2.algetec_a_h2 {
+  text-align: justify;
+  line-height: 150%;
+  break-after: avoid;
+  font-family: Bahnschrift, sans-serif;
+  color: #bb243e;
+  margin: 0px 0px 11px 24px;
+  font-size: 1.5em;
+}
+
+/* colocar classe específica para evitar que as regras abaixo afetem os outros elementos da página */
+h2.algetec_h2 {
+  text-align: justify;
+  line-height: 150%;
+  break-after: avoid;
+  font-family: Bahnschrift, sans-serif;
+  color: #bb243e;
+  margin: 0px 0px 11px 24px;
+  font-size: 1.5em;
+}
+
+/* colocar classe específica para evitar que as regras abaixo afetem os outros elementos da página */
+h1.algetec_h1 {
+  text-align: center;
+  line-height: 150%;
+  break-after: avoid;
+  font-family: Bahnschrift, sans-serif;
+  color: #bb243e;
+  margin: 0px 0px 11px;
+  font-size: 2em;
+}
+
+/* colocar classe específica para evitar que as regras abaixo afetem os outros elementos da página */
+p.algetec_p {
+  margin: 16px 0px 11px 48px;
+  text-align: justify;
+  line-height: 150%;
+  font-size: 1em;
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* colocar classe específica para evitar que as regras abaixo afetem os outros elementos da página */
+img.algetec_img {
+  /*
+    Não é recomendado utilizar medidas de altura e largura absolutas como o px por causa da responsividade.
+    A estilização ideal para que imagens tenham seu tamanho real em tela é:
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+  */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+span.algetec_span {
+  font-family: arial, helvetica, sans-serif;
+}
+
+ul.algetec_ul {
+  list-style-type: ".  ";
+  line-height: 150%;
+}
+
+ul.algetec_ul > li.algetec_li::marker {
+  color: #bb243e; /* não seria problema utilizar uma cor fixa, porém é necessário validar como fica a apresentação no template streaming */
+}
+
+li.algetec_li {
+  font-family: helvetica, arial, sans-serif;
+}
+
+li.algetec_li > * {
+  text-indent: -24px;
+}
+
+.procedments-list-item {
+  font-family: Bahnschrift, sans-serif;
+  color: #bb243e; /* não seria problema utilizar uma cor fixa, porém é necessário validar como fica a apresentação no template streaming */
+  font-size: 1.5em;
+}
+
+li.algetec_li > p.algetec_p {
+  text-align: justify;
+  line-height: 150%;
+  font-family: Bahnschrift, sans-serif;
+  text-indent: -24px;
+  font-size: 1em; /* o ideal é evitar configurar tamanho de fontes em px e utilizar rem (cockpit usa o font-size base em 14px) */
+}
+
+li.algetec_li > h3.algetec_h3 {
+  color: #222;
+  counter-increment: item;
+  list-style-type: none;
+}
+
+.subtitle.algetec_subtitle {
+  text-align: justify;
+  line-height: 150%;
+  break-after: avoid;
+  font-family: Bahnschrift, sans-serif;
+  color: #bb243e;
+  margin: 0px 0px 11px;
+  font-size: 1.5em; /* o ideal é evitar configurar tamanho de fontes em px e utilizar rem (cockpit usa o font-size base em 14px) */
 }
